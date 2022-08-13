@@ -17,6 +17,7 @@
   ---color--portfolio-text-btn: #212121;
   ---color-cart-portfolio: #ffffff;
   ---color-current: #2196f3;
+  ---color-text-overlay: rgba(255, 255, 255, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -671,7 +672,7 @@ footer {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 1);
+  color: var(---color-text-overlay);
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
