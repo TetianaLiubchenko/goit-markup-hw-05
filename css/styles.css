@@ -88,6 +88,7 @@ img {
 }
 
 .header-link {
+  display: block;
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -96,8 +97,6 @@ img {
   color: var(---text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 3px;
-  padding-right: 3px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 125ms;
 }
@@ -109,9 +108,10 @@ img {
   height: 4px;
   background-color: var(---color-current);
   left: 0;
-  bottom: 0;
+  bottom: -3px;
+  border-radius: 4px;
 }
-
+.current,
 .header-link:hover,
 .header-link:focus {
   color: var(--color-logo);
@@ -129,7 +129,7 @@ img {
   display: flex;
   align-items: center;
 
-  transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 125ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-mail-header:hover,
 .contacts-tel-header:hover,
@@ -280,7 +280,7 @@ img {
 .services-text {
   position: absolute;
   bottom: 0;
-  margin: auto;
+  display: flex;
 
   font-weight: 700;
   font-size: 14px;
@@ -291,8 +291,9 @@ img {
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   width: 370px;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
 }
 /* team-section*/
 .team-section {
@@ -629,11 +630,13 @@ footer {
   background: var(---color-cart-portfolio);
   flex-wrap: wrap;
   gap: 30px;
-}
-.container-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* .container-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px; */
+/* } */
 .main-portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -663,6 +666,7 @@ footer {
 }
 .actions {
   position: relative;
+  overflow: hidden;
 }
 .actions-thumb {
   position: absolute;
@@ -708,10 +712,11 @@ footer {
   letter-spacing: 0.03em;
   color: var(---color--portfolio-text-btn);
   border: 1px solid transparent;
+  border-radius: 4px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-current {
   background: var(---color-current);
@@ -722,13 +727,7 @@ footer {
   background-color: var(--color-bgd-btn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(---color-title);
-  border: 1px solid transparent;
 }
 
 .works {
