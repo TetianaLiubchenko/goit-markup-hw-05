@@ -387,8 +387,8 @@ h4 {
   align-items: center;
   justify-content: center;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms,
-    bacground 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-list {
   display: flex;
@@ -398,7 +398,7 @@ h4 {
 
 .social-link:hover,
 .social-link:focus {
-  background: #2196f3;
+  background-color: #2196f3;
   fill: #ffffff;
 }
 /*----------------Clients------------------ */
@@ -420,13 +420,14 @@ h4 {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  outline: transparent;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms,
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms;
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 155ms;
 }
 
 .clients-item {
@@ -558,7 +559,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 125ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -753,6 +754,5 @@ footer {
 }
 .gallery-link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
